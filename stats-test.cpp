@@ -28,7 +28,7 @@ TEST_CASE("average is NaN for empty array") {
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
-     //alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
+     alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
      float numberset[] = {99.8, 34.2, 4.5};
      int setlength = sizeof(numberset) / sizeof(numberset[0]);
      Stats_t computedStats = compute_statistics(numberset, setlength);
