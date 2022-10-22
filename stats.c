@@ -5,7 +5,8 @@
 Stats_t compute_statistics(const float* numberset, int setlength) 
 {
    Stats_t s={NAN,NAN,NAN};
-   if(setlength == 0) return s;
+   if(setlength == 0) 
+    return s;
    s.min = numberset[0];
    s.max = numberset[0];
    s.average = 0;
