@@ -35,7 +35,7 @@ if(computedStats.max > maxThreshold)
    {
     (*alerters[i])();
    }
-   
+ }
 }
 
 
